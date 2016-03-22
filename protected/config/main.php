@@ -38,12 +38,6 @@ $config = [
             'servicesDirAlias' => 'application.services.amf',
             'productionMode' => false,
             'amfDiscoveryEnabled' => true,
-            'classMap' => [
-                'net.fproject.calendar.WorkCalendar' => 'fproject\calendar\WorkCalendar',
-                'net.fproject.calendar.Period' => 'fproject\calendar\Period',
-                'net.fproject.calendar.WorkShift' => 'fproject\calendar\WorkShift',
-                'net.fproject.calendar.WeekDay' => 'fproject\calendar\WeekDay',
-            ]
         ],
     ],
 
