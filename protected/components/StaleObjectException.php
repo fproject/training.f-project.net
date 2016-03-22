@@ -1,0 +1,16 @@
+<?php
+///////////////////////////////////////////////////////////////////////////////
+//
+// Licensed Source Code - Property of f-project.net
+//
+// © Copyright f-project.net 2016. All Rights Reserved.
+//
+///////////////////////////////////////////////////////////////////////////////
+
+/**
+ * @author Qiang Xue <qiang.xue@gmail.com>
+ * @since 2.0
+ */
+class StaleObjectException extends Exception
+{
+}

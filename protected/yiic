@@ -1,0 +1,5 @@
+
+Yii Migration Tool v1.0 (based on Yii v1.1.14)
+
+Error: The version option must be either a timestamp (e.g. 101129_185401)
+or the full name of a migration (e.g. m101129_185401_create_user_table).

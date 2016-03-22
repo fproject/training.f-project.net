@@ -1,0 +1,13 @@
+/protected/tests/log
+.idea
+protected/runtime/application.log
+protected/runtime/state.bin
+protected/runtime/cache*
+protected/runtime/HTML/**
+protected/runtime/URI/**
+flexapps
+assets/**
+fattachments
+avatar
+protected/vendor
+protected/composer.lock

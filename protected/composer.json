@@ -1,0 +1,33 @@
+{
+    "name": "projectkit/pk-main-server",
+    "description": "F-Project Training Application Server",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "admin",
+            "email": "admin@projectkit.net"
+        }
+    ],
+    "minimum-stability" : "stable",
+    "require": {
+        "php": ">=5.4.0",
+        "fproject/php-common": "*",
+        "fproject/fprj-php": "*",
+        "fproject/phpamf": "*"
+    },
+    "require-dev": {
+      "phpunit/phpunit": "4.7.*",
+      "phpunit/dbunit": ">=1.2",
+      "phpunit/phpunit-selenium": ">=1.2",
+      "phpunit/phpunit-story": "*",
+      "phpunit/php-invoker": "*"
+    },
+    "config" : {
+        "process-timeout" : 1800
+    },
+    "autoload": {
+        "psr-0": {
+            "config": "./"
+        }
+    }
+}
