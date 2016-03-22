@@ -137,7 +137,7 @@ if (defined('YII_ENV_DEV') && YII_ENV_DEV) {
     $config['modules']['gii'] =
         [
             'class' => 'system.gii.GiiModule',
-            'password' => 'pk_12345',
+            'password' => '123456',
             // If removed, Gii defaults to localhost only. Edit carefully to taste.
             'ipFilters' => ['127.0.0.1', '::1'],
         ];
