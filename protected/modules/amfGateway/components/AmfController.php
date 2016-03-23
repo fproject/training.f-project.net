@@ -109,7 +109,7 @@ abstract class AmfController extends Controller
 			require_once('Zend/Amf/Parse/TypeLoader.php');
 			Zend_Amf_Parse_TypeLoader::$classMap = array_merge(Zend_Amf_Parse_TypeLoader::$classMap, $this->classMap);
 		}
-        $this->server->setAuth(new AmfAuthAdapter());
+        //$this->server->setAuth(new AmfAuthAdapter());
 
 		echo $this->server->handle();
 	}
