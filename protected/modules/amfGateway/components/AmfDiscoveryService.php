@@ -207,6 +207,11 @@ class AmfDiscoveryService {
         self::$serviceNames2ClassFindInfo["AmfDiscoveryService"] = new ClassFindInfo($discoveryPath, 'AmfDiscoveryService');
         $server->setClass("AmfDiscoveryService");
     }
+
+    public function initAcl()
+    {
+        return false;
+    }
 }
 
 ?>

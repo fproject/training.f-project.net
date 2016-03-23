@@ -57,17 +57,8 @@
  * The followings are the available model relations:
 
  * @property AppContextData[] $loginUserAppContextDatas
- * @property CalendarItem[] $userCalendarItems
- * @property Gcm[] $userGcms
- * @property Issue[] $requesterIssues
- * @property Issue[] $ownerIssues
- * @property PersonalCalendar[] $userPersonalCalendars
- * @property Post[] $createUserPosts
- * @property Post[] $targetUserPosts
- * @property Post[] $updateUserPosts
  * @property Resource[] $userResources
  * @property UserProfile $userProfile
- * @property ProjectResourceAssignment[] $projectAssignments
  */
 
 class User extends ActiveRecord
@@ -143,19 +134,7 @@ class User extends ActiveRecord
 		// class name for the relations automatically generated below.
 
 		return array(
-
-			'loginUserAppContextDatas' => array(self::HAS_MANY, 'AppContextData', 'loginUserId'),
-			'userCalendarItems' => array(self::HAS_MANY, 'CalendarItem', 'userId'),
-			'userGcms' => array(self::HAS_MANY, 'Gcm', 'userId'),
-			'requesterIssues' => array(self::HAS_MANY, 'Issue', 'requesterId'),
-			'ownerIssues' => array(self::HAS_MANY, 'Issue', 'ownerId'),
-			'userPersonalCalendars' => array(self::HAS_MANY, 'PersonalCalendar', 'userId'),
-			'createUserPosts' => array(self::HAS_MANY, 'Post', 'createUserId'),
-			'targetUserPosts' => array(self::HAS_MANY, 'Post', 'targetUserId'),
-			'updateUserPosts' => array(self::HAS_MANY, 'Post', 'updateUserId'),
-			'userResources' => array(self::HAS_MANY, 'Resource', 'userId'),
 			'userProfile' => array(self::HAS_ONE, 'UserProfile', 'userId'),
-			'projectAssignments' => array(self::HAS_MANY, 'ProjectResourceAssignment', 'resourceId'),
 		);
 
 	}
