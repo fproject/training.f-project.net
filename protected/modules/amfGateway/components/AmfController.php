@@ -102,6 +102,8 @@ abstract class AmfController extends Controller
         if(!$this->_productionMode && $this->_amfDiscoveryEnabled)
         {
             Yii::import("application.modules.amfGateway.components.AmfDiscoveryService",true);
+			AmfDiscoveryService::$excludePaths = ['AmfDiscoveryService'];
+			AmfDiscoveryService::$modelFolderPaths = [Yii::getPathOfAlias(Yii::app()->getModule('amfGateway')->voDirAlias)];
             AmfDiscoveryService::setConfiguration($this, $this->server);
         }
 		if(!empty($this->classMap))

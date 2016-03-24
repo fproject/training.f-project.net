@@ -36,6 +36,7 @@
 class AmfGatewayModule extends CWebModule {
 
     public $servicesDirAlias = 'application.services.amf';
+    public $voDirAlias = 'application.services.vo';
     public $productionMode = true;//Replace to FALSE in debug mode to enable developer's features
     public $amfDiscoveryEnabled = false;//Replace to TRUE in debug mode to enable service discovery
     /**
