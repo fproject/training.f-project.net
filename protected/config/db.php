@@ -8,10 +8,10 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 return [
-    'connectionString' => 'mysql:host=localhost;dbname=u997817970_train',
+    'connectionString' => 'mysql:host=mysql.hostinger.vn;dbname=u997817970_train',
     'emulatePrepare' => true,
-    'username' => 'root',
-    'password' => 'root',
+    'username' => 'u997817970_train',
+    'password' => 'train123',
     'charset' => 'utf8',
-    //'enableParamLogging'=>true,
+    'enableParamLogging'=>true,
 ];
