@@ -1055,7 +1055,7 @@ abstract class ValueObjectModel implements JsonSerializable
         return $this;
     }
 
-    protected $activityNoticeEnabled = true;
+    protected $activityNoticeEnabled = false;
 
     /**
      * Set value for $activityNoticeDisabled flag
